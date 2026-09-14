@@ -1,6 +1,5 @@
 import "./globals.css";
 
-
 /** @type {import("next").Metadata} */
 export const metadata = {
   metadataBase: new URL("https://www.sonishupadhyaya.com.np"),
@@ -35,6 +34,8 @@ export const metadata = {
 
   creator: "Sonish Upadhyaya",
   publisher: "Sonish Upadhyaya",
+
+  category: "technology",
 
   alternates: {
     canonical: "https://www.sonishupadhyaya.com.np",
