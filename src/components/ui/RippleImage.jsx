@@ -43,7 +43,7 @@ export default function RippleImage() {
     texture1.minFilter = THREE.LinearFilter;
     texture1.magFilter = THREE.LinearFilter;
 
-    const texture2 = loader.load("/cosmos.png");
+    const texture2 = loader.load("/multiverse.png");
     texture2.minFilter = THREE.LinearFilter;
     texture2.magFilter = THREE.LinearFilter;
 

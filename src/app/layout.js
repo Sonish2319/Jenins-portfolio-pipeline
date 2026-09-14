@@ -10,7 +10,7 @@ export const metadata = {
   },
 
   description:
-    "Sonish Upadhyaya is a backend-focused full-stack developer specializing in scalable APIs, database architecture, performance optimization, cloud deployment, and DevOps.",
+    "Sonish Upadhyaya is a backend-focused full-stack developer building scalable APIs, high-performance systems, and reliable cloud solutions.",
 
   keywords: [
     "Sonish Upadhyaya",
