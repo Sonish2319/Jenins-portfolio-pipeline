@@ -103,19 +103,18 @@ Internet → Cloudflare → MikroTik → K8s Ingress (192.*.*.62)
 
 
 ## Summary Flow
-
-| Stage | Component | Responsibility |
-
-| 1 | GitHub (`dev`) | Source of truth for code |
-| 2 | GitHub Webhook | Triggers pipeline on push |
-| 3 | Cloudflare | DNS, proxy, HTTPS |
-| 4 | MikroTik | NAT/firewall routing |
-| 5 | Jenkins (via Nginx) | Build, test, push, deploy |
-| 6 | Docker Hub | Image registry |
-| 7 | K8s API + ServiceAccount | Authenticated deployment |
-| 8 | Deployment/Pods | Runs the live app |
-| 9 | Ingress + Service | Routes user traffic to pods |
-
+```
+Stage	Component	Responsibility
+1	GitHub (dev)	Source of truth for code
+2	GitHub Webhook	Triggers pipeline on push
+3	Cloudflare	DNS, proxy, HTTPS
+4	MikroTik	NAT/firewall routing
+5	Jenkins (via Nginx)	Build, test, push, deploy
+6	Docker Hub	Image registry
+7	K8s API + ServiceAccount	Authenticated deployment
+8	Deployment/Pods	Runs the live app
+9	Ingress + Service	Routes user traffic to pods
+```
 ## Key Design Points
 
 - Fully automated: a push to `dev` is the only manual step required; everything downstream is automatic.
