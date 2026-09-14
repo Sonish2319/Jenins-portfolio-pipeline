@@ -4,6 +4,7 @@ This repository is deployed using a self-hosted CI/CD pipeline that builds on ev
 
 ## Architecture Overview
 
+```
 INTERNET
     |
     v
@@ -57,6 +58,7 @@ Deployment/portfolio
     v
 Next.js Pods (running application)
 
+```
 
 ## How It Works
 
